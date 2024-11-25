@@ -7,7 +7,7 @@ defmodule FinancesApplicationWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_finances_application_key",
-    signing_salt: "/6beLOHM",
+    signing_salt: "v6rN2GNh",
     same_site: "Lax"
   ]
 

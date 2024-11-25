@@ -18,7 +18,6 @@ defmodule FinancesApplicationWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    get "/menu", MenuController, :menu
   end
 
   # Other scopes may use custom stacks.

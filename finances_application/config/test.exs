@@ -17,7 +17,7 @@ config :finances_application, FinancesApplication.Repo,
 # you can enable the server option below.
 config :finances_application, FinancesApplicationWeb.Endpoint,
   http: [ip: {127, 0, 0, 1}, port: 4002],
-  secret_key_base: "dA1ZXDBH/9IZc9sb2R+NZzN0IRyz/ZZyMBuOzfUMmlhN57AVtkjTQYSjZ5FFukii",
+  secret_key_base: "qKJ4DCkH196gRxFT+TFKRL++eMVdtFpptftMwZf0octFoekK5jdPp3bN+M1rLmd9",
   server: false
 
 # In test we don't send emails

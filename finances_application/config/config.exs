@@ -20,7 +20,7 @@ config :finances_application, FinancesApplicationWeb.Endpoint,
     layout: false
   ],
   pubsub_server: FinancesApplication.PubSub,
-  live_view: [signing_salt: "d4XCN4OP"]
+  live_view: [signing_salt: "8LFzwRlD"]
 
 # Configures the mailer
 #

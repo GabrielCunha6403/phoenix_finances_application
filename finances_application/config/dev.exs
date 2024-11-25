@@ -23,7 +23,7 @@ config :finances_application, FinancesApplicationWeb.Endpoint,
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
-  secret_key_base: "ouvNzrEouHtXc9jh8FK3fu/5ej2HrpTHX3wAFoyIg2YepRguSyiBiIjP1yodP0ZZ",
+  secret_key_base: "/iGavt28TDk8UYSdUIboixM7Bkn69/XnjLegMBkgUtyzXl0uh5YUmHb0Yp/vjnwC",
   watchers: [
     esbuild: {Esbuild, :install_and_run, [:finances_application, ~w(--sourcemap=inline --watch)]},
     tailwind: {Tailwind, :install_and_run, [:finances_application, ~w(--watch)]}

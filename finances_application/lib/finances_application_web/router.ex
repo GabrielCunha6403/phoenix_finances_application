@@ -12,12 +12,24 @@ defmodule FinancesApplicationWeb.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    plug :fetch_session
+    plug Plug.CSRFProtection, with: :clear_session # Disable for specific requests
   end
 
   scope "/", FinancesApplicationWeb do
-    pipe_through :browser
+    pipe_through :api
 
     get "/", PageController, :home
+
+    # ROTAS ====================================
+    get "/receitas", ReceitaController, :hello
+
+    # ENDPOINTS ================================
+    scope "/api" do
+      get "/receitas", ReceitaController, :all
+      get "/receitas/:id", ReceitaController, :get
+      post "/receitas", ReceitaController, :create
+    end
   end
 
   # Other scopes may use custom stacks.
